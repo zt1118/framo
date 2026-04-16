@@ -1,0 +1,12 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="225" 
+        font-family="'Brush Script MT', cursive, sans-serif" 
+        font-size="84" 
+        fill="#000000" 
+        text-anchor="middle" 
+        dominant-baseline="middle"
+        style="font-weight: 400; letter-spacing: 2px;">
+    Who Cares?
+  </text>
+</svg>

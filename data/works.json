@@ -51,6 +51,24 @@
       ],
       "duration": "15s",
       "featured": false
+    },
+    {
+      "id": "work-003",
+      "title": "谁在乎？",
+      "description": "一段15秒的极简手写动画，黑白笔触书写出反问的态度",
+      "story": "这是一次关于态度的视觉表达。用最简单的黑白配色和手写文字，传达一种超脱的态度。\n\n在快节奏的生活中，'Who Cares?'不是冷漠，而是选择专注于真正重要的事。每一笔的书写都是情绪的流动，邀请观众思考什么才是真正值得在意的。\n\n这个作品采用极简主义美学，通过最少的视觉元素创造最大的情绪冲击。流畅的手写动画让数字作品保留了温度和人性。",
+      "createdDate": "2024-04",
+      "tools": ["After Effects"],
+      "tags": ["极简主义", "文字动画", "黑白", "态度表达"],
+      "thumbnail": "assets/thumbnails/work-003.jpg",
+      "media": {
+        "type": "video",
+        "url": "assets/videos/work-003.mp4",
+        "poster": "assets/thumbnails/work-003.jpg"
+      },
+      "additionalMedia": [],
+      "duration": "15s",
+      "featured": true
     }
   ]
 }
