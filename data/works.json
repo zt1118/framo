@@ -60,11 +60,11 @@
       "createdDate": "2024-04",
       "tools": ["After Effects"],
       "tags": ["极简主义", "文字动画", "黑白", "态度表达"],
-      "thumbnail": "assets/thumbnails/work-003.jpg",
+      "thumbnail": "assets/thumbnails/work-003.svg",
       "media": {
         "type": "video",
         "url": "assets/videos/work-003.mp4",
-        "poster": "assets/thumbnails/work-003.jpg"
+        "poster": "assets/thumbnails/work-003.svg"
       },
       "additionalMedia": [],
       "duration": "15s",

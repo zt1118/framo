@@ -1,0 +1,15 @@
+<svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg">
+  <!-- 白色背景 -->
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  
+  <!-- 手写风格的文字 -->
+  <text x="640" y="360" 
+        font-family="'Brush Script MT', 'Apple Chancery', cursive, sans-serif" 
+        font-size="120" 
+        fill="#000000" 
+        text-anchor="middle" 
+        dominant-baseline="middle"
+        style="font-weight: 400; letter-spacing: 3px;">
+    Who Cares?
+  </text>
+</svg>
