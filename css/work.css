@@ -1,0 +1,361 @@
+/* ==========================================================================
+   作品详情页样式
+   ========================================================================== */
+
+/* 返回导航 */
+.work-nav {
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--font-size-base);
+  color: var(--color-text-primary);
+  transition: opacity var(--transition-normal) var(--ease-out);
+}
+
+.back-link:hover {
+  opacity: 0.7;
+}
+
+/* 主内容 */
+.work-main {
+  padding: var(--space-xxl) 0;
+}
+
+.work-content {
+  max-width: var(--media-max-width);
+  margin: 0 auto;
+}
+
+/* 主媒体区域 */
+.work-media {
+  margin-bottom: var(--space-xxl);
+}
+
+.media-container {
+  position: relative;
+  width: 100%;
+  background-color: var(--color-bg-alt);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.media-container video,
+.media-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.media-container video {
+  cursor: pointer;
+}
+
+/* 作品信息区域 */
+.work-info {
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.work-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: var(--space-md);
+}
+
+@media (max-width: 768px) {
+  .work-title {
+    font-size: var(--font-size-xl);
+  }
+}
+
+.work-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.work-meta-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.work-meta-label {
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.work-tag {
+  padding: 4px 12px;
+  background-color: var(--color-bg-alt);
+  border-radius: 16px;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+/* 内容区块 */
+.work-section {
+  margin-bottom: var(--space-xxl);
+}
+
+.section-title {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--color-border);
+}
+
+/* 简介和故事内容 */
+.work-description,
+.story-content {
+  max-width: var(--content-max-width);
+  font-size: var(--font-size-base);
+  line-height: 1.8;
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 768px) {
+  .work-description,
+  .story-content {
+    font-size: var(--font-size-sm);
+  }
+}
+
+.work-description p,
+.story-content p {
+  margin-bottom: var(--space-lg);
+}
+
+.work-description p:last-child,
+.story-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* 制作过程画廊 */
+.process-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+@media (max-width: 768px) {
+  .process-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.process-item {
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform var(--transition-normal) var(--ease-out);
+}
+
+.process-item:hover {
+  transform: translateY(-4px);
+}
+
+.process-item-image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-color: var(--color-bg-alt);
+  overflow: hidden;
+}
+
+.process-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal) var(--ease-out);
+}
+
+.process-item:hover .process-item-image img {
+  transform: scale(1.05);
+}
+
+.process-item-caption {
+  padding: var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
+/* 加载和错误状态 */
+.loading {
+  text-align: center;
+  padding: var(--space-xxl) 0;
+  color: var(--color-text-secondary);
+}
+
+.not-found {
+  text-align: center;
+  padding: var(--space-xxl) 0;
+}
+
+.not-found h2 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-md);
+}
+
+.not-found p {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xl);
+}
+
+.back-button {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-lg);
+  background-color: var(--color-accent);
+  color: #FFFFFF;
+  border-radius: 4px;
+  font-size: var(--font-size-base);
+  transition: opacity var(--transition-normal) var(--ease-out);
+}
+
+.back-button:hover {
+  opacity: 0.9;
+}
+
+/* ==========================================================================
+   图片灯箱样式
+   ========================================================================== */
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  cursor: pointer;
+}
+
+.lightbox-content {
+  position: relative;
+  z-index: 1;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  user-select: none;
+}
+
+.lightbox-caption {
+  margin-top: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+  font-size: var(--font-size-sm);
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* 灯箱控制按钮 */
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  font-size: 32px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color var(--transition-fast) var(--ease-out);
+  z-index: 2;
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-close {
+  top: var(--space-md);
+  right: var(--space-md);
+}
+
+.lightbox-prev {
+  left: var(--space-md);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox-next {
+  right: var(--space-md);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .lightbox-close,
+  .lightbox-prev,
+  .lightbox-next {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+  
+  .lightbox-prev {
+    left: var(--space-sm);
+  }
+  
+  .lightbox-next {
+    right: var(--space-sm);
+  }
+}
+
+/* 键盘导航提示（可选） */
+@media (min-width: 769px) {
+  .lightbox-content::after {
+    content: '← → 切换 | ESC 关闭';
+    position: absolute;
+    bottom: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: var(--font-size-xs);
+    white-space: nowrap;
+  }
+}
