@@ -206,10 +206,15 @@ function renderStory() {
  * 渲染制作过程
  */
 function renderProcess() {
+  const processSection = document.getElementById('workProcess');
+  
   if (!currentWork.additionalMedia || currentWork.additionalMedia.length === 0) {
-    document.getElementById('workProcess').classList.add('hidden');
+    processSection.classList.add('hidden');
     return;
   }
+  
+  // 移除 hidden 类以显示板块
+  processSection.classList.remove('hidden');
   
   const processGallery = document.getElementById('processGallery');
   const additionalMedia = currentWork.additionalMedia;
