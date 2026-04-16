@@ -1,58 +1,6 @@
 {
   "works": [
     {
-      "id": "work-001",
-      "title": "跳跃的小兔子",
-      "description": "一只可爱的兔子在草地上欢快跳跃的循环动画",
-      "story": "这是我第一次尝试角色动画创作。灵感来源于春天里在公园看到的一只活泼的小兔子。我想捕捉它那种轻盈、欢快的感觉。\n\n制作过程中最大的挑战是如何让跳跃动作看起来自然有弹性。我反复调整了关键帧的timing，最终找到了合适的节奏。\n\n使用的是传统逐帧动画技术，共绘制了24帧。",
-      "createdDate": "2024-03",
-      "tools": ["Procreate", "After Effects"],
-      "tags": ["角色动画", "逐帧", "循环动画"],
-      "thumbnail": "assets/thumbnails/work-001.jpg",
-      "media": {
-        "type": "gif",
-        "url": "assets/gifs/work-001.gif"
-      },
-      "additionalMedia": [
-        {
-          "type": "image",
-          "url": "assets/images/work-001-sketch.jpg",
-          "caption": "早期草图"
-        },
-        {
-          "type": "image",
-          "url": "assets/images/work-001-keyframes.jpg",
-          "caption": "关键帧设计"
-        }
-      ],
-      "duration": "2s",
-      "featured": true
-    },
-    {
-      "id": "work-002",
-      "title": "城市剪影",
-      "description": "日落时分城市天际线的光影变化",
-      "story": "这个作品探索了时间流逝和光影变化的美感。我想通过简化的剪影形式，专注于色彩和光线的变化。\n\n创作灵感来自每天下班回家路上看到的城市日落。那种从金黄到深蓝的渐变让我着迷。\n\n技术上使用了渐变遮罩和色彩混合模式，让过渡更加自然柔和。整个动画持续15秒，展现了大约30分钟的时间流逝。",
-      "createdDate": "2024-02",
-      "tools": ["After Effects", "Illustrator"],
-      "tags": ["实验动画", "光影", "抽象"],
-      "thumbnail": "assets/thumbnails/work-002.jpg",
-      "media": {
-        "type": "video",
-        "url": "assets/videos/work-002.mp4",
-        "poster": "assets/thumbnails/work-002.jpg"
-      },
-      "additionalMedia": [
-        {
-          "type": "image",
-          "url": "assets/images/work-002-color-study.jpg",
-          "caption": "色彩研究"
-        }
-      ],
-      "duration": "15s",
-      "featured": false
-    },
-    {
       "id": "work-003",
       "title": "谁在乎？",
       "description": "一段15秒的极简手写动画，黑白笔触书写出反问的态度",
