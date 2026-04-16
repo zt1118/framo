@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Framo - 个人 2D 手绘动画作品展示">
+  <meta name="keywords" content="动画,2D动画,手绘动画,作品集">
+  <meta name="author" content="Framo">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Framo - 动画作品集">
+  <meta property="og:description" content="个人 2D 手绘动画作品展示">
+  <meta property="og:type" content="website">
+  
+  <title>Framo - 动画作品集</title>
+  
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- 页头 -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-left">
+          <h1 class="site-title">Framo</h1>
+          <p class="site-subtitle">2D 手绘动画作品</p>
+        </div>
+        
+        <div class="header-right">
+          <!-- 搜索框 -->
+          <div class="search-box">
+            <input 
+              type="text" 
+              id="searchInput" 
+              class="search-input" 
+              placeholder="搜索作品..."
+              autocomplete="off"
+            >
+            <button 
+              id="searchClear" 
+              class="search-clear hidden" 
+              aria-label="清空搜索"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- 主内容 -->
+  <main class="site-main">
+    <div class="container">
+      <!-- 搜索结果提示 -->
+      <div id="searchStatus" class="search-status hidden"></div>
+      
+      <!-- 作品网格（瀑布流） -->
+      <div id="worksGrid" class="works-grid">
+        <!-- 作品卡片将由 JavaScript 动态生成 -->
+      </div>
+      
+      <!-- 加载状态 -->
+      <div id="loading" class="loading">
+        <p>加载中...</p>
+      </div>
+      
+      <!-- 空状态 -->
+      <div id="emptyState" class="empty-state hidden">
+        <p>未找到相关作品</p>
+      </div>
+    </div>
+  </main>
+  
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 Framo. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- Masonry.js (CDN) -->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <!-- imagesLoaded (确保图片加载后再初始化 Masonry) -->
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <!-- 主脚本 -->
+  <script src="js/main.js"></script>
+</body>
+</html>
