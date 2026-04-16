@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="作品详情 - Framo">
+  <meta name="author" content="Framo">
+  
+  <title>作品详情 - Framo</title>
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/work.css">
+</head>
+<body>
+  <!-- 返回导航 -->
+  <nav class="work-nav">
+    <div class="container">
+      <a href="index.html" class="back-link">← 返回首页</a>
+    </div>
+  </nav>
+
+  <!-- 主内容 -->
+  <main class="work-main">
+    <div class="container">
+      <!-- 加载状态 -->
+      <div id="loading" class="loading">
+        <p>加载中...</p>
+      </div>
+
+      <!-- 作品内容 -->
+      <article id="workContent" class="work-content hidden">
+        <!-- 主媒体区域 -->
+        <section class="work-media">
+          <div id="mediaContainer" class="media-container">
+            <!-- 视频或 GIF 将由 JavaScript 动态插入 -->
+          </div>
+        </section>
+
+        <!-- 作品信息区域 -->
+        <section class="work-info">
+          <h1 id="workTitle" class="work-title"></h1>
+          <div id="workMeta" class="work-meta"></div>
+        </section>
+
+        <!-- 作品简介 -->
+        <section id="workDescription" class="work-section">
+          <!-- 简介内容将由 JavaScript 动态插入 -->
+        </section>
+
+        <!-- 创作故事 -->
+        <section id="workStory" class="work-section">
+          <h2 class="section-title">创作故事</h2>
+          <div id="storyContent" class="story-content">
+            <!-- 故事内容将由 JavaScript 动态插入 -->
+          </div>
+        </section>
+
+        <!-- 制作过程 -->
+        <section id="workProcess" class="work-section hidden">
+          <h2 class="section-title">制作过程</h2>
+          <div id="processGallery" class="process-gallery">
+            <!-- 过程图片将由 JavaScript 动态插入 -->
+          </div>
+        </section>
+      </article>
+
+      <!-- 404 状态 -->
+      <div id="notFound" class="not-found hidden">
+        <h2>作品不存在</h2>
+        <p>抱歉，未找到该作品。</p>
+        <a href="index.html" class="back-button">返回首页</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- 图片灯箱 -->
+  <div id="lightbox" class="lightbox hidden">
+    <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="关闭">✕</button>
+      <button class="lightbox-prev" onclick="prevImage()" aria-label="上一张">‹</button>
+      <button class="lightbox-next" onclick="nextImage()" aria-label="下一张">›</button>
+      <img id="lightboxImage" src="" alt="">
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- 脚本 -->
+  <script src="js/lightbox.js"></script>
+  <script src="js/work.js"></script>
+</body>
+</html>
