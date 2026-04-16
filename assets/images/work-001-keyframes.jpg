@@ -1,0 +1,40 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#FAFAFA"/>
+  <g transform="translate(50, 50)">
+    <text font-family="Arial, sans-serif" font-size="24" fill="#666" x="0" y="0">
+      关键帧设计 - 跳跃循环的4个关键帧
+    </text>
+    
+    <!-- Frame 1 -->
+    <g transform="translate(50, 80)">
+      <text font-size="14" fill="#999" x="35" y="0">帧 1</text>
+      <rect width="100" height="100" y="10" fill="#E8E8E8" stroke="#CCC"/>
+      <ellipse cx="50" cy="80" rx="20" ry="30" fill="#FFB6C1"/>
+      <text font-size="12" y="130" x="20">准备</text>
+    </g>
+    
+    <!-- Frame 2 -->
+    <g transform="translate(200, 80)">
+      <text font-size="14" fill="#999" x="35" y="0">帧 2</text>
+      <rect width="100" height="100" y="10" fill="#E8E8E8" stroke="#CCC"/>
+      <ellipse cx="50" cy="45" rx="20" ry="30" fill="#FFB6C1"/>
+      <text font-size="12" y="130" x="20">起跳</text>
+    </g>
+    
+    <!-- Frame 3 -->
+    <g transform="translate(350, 80)">
+      <text font-size="14" fill="#999" x="35" y="0">帧 3</text>
+      <rect width="100" height="100" y="10" fill="#E8E8E8" stroke="#CCC"/>
+      <ellipse cx="50" cy="35" rx="20" ry="30" fill="#FFB6C1"/>
+      <text font-size="12" y="130" x="15">最高点</text>
+    </g>
+    
+    <!-- Frame 4 -->
+    <g transform="translate(500, 80)">
+      <text font-size="14" fill="#999" x="35" y="0">帧 4</text>
+      <rect width="100" height="100" y="10" fill="#E8E8E8" stroke="#CCC"/>
+      <ellipse cx="50" cy="70" rx="20" ry="30" fill="#FFB6C1"/>
+      <text font-size="12" y="130" x="20">落地</text>
+    </g>
+  </g>
+</svg>
